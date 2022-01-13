@@ -46,37 +46,33 @@ export default {
 };
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
   @import "../assets/scss/partials/_variables.scss";
-  .header {
-    // background-color: red;
     img {
       width: 7%;
       padding: 1em 0;
     }
-  }
-  .container {
-    display: flex;
-    justify-content: space-around;
-  }
-  ul {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    li {
-      height: 100%;
+    ul {
+      width: 100%;
+      list-style: none;
       display: flex;
+      justify-content: flex-end;
       align-items: center;
-      a {
-        display: block;
-        text-decoration: none;
-        padding: 1em;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: $headerGrayColor;
+      li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        a {
+          display: block;
+          text-decoration: none;
+          padding: 1em;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: $headerGrayColor;
+        }
       }
     }
+  .container {
+    display: flex;
   }
 </style>

@@ -36,35 +36,39 @@ export default {
 }
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
   @import "../assets/scss/partials/_variables.scss";
   .Endmain {
     background-color: $mainBlueColor;
     // height: 150px;
+    z-index: 1;
   }
   ul.endmain {
     display: flex;
     justify-content: space-around;
     padding: 3em 0;
-    li {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      width: calc(100% / 5);
-      img {
-        width: 20%;
-      }
-      img.powershell {
-        width: 28%;
-      }
-      img.maps {
-        width: 15%;
-      }
-      a {
-        font-size: 0.7em;
-        color: white;
-      }
+  }
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 5);
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 1em;
+      text-transform: uppercase;
+      color: white;
+    }
+    img {
+      width: 20%;
+    }
+    img.powershell {
+      width: 28%;
+    }
+    img.maps {
+      width: 15%;
     }
   }
 </style>
