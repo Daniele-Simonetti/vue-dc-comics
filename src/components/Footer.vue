@@ -5,44 +5,94 @@
         <div class="DcComics">
           <h2>Dc comics</h2>
           <ul>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
           </ul>
           <h2>Shop</h2>
           <ul>
-            <li>lorem</li>
-            <li>lorem</li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
           </ul>
         </div>
         <div class="Dc">
           <h2>Dc</h2>
           <ul>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
+            <li>
+              <a href="">Terms Of Use</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
           </ul>
         </div>
         <div class="Sites">
           <h2>Sites</h2>
           <ul>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
+            <li>
+              <a href="">lorem</a>
+            </li>
           </ul>
         </div>
         <!-- <div class="Shop">
@@ -94,7 +144,11 @@ export default {
     }
     li {
       list-style: none;
-      color: $footerGrayColor;
+      a {
+        text-decoration: none;
+        color: $footerGrayColor;
+        font-size: 1.4em;
+      }
     }
   
   }
