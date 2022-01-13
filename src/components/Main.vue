@@ -1,7 +1,7 @@
 <template>
 <div class="main">
   <div class="container">
-
+    <h2>  Content goes here </h2>
   </div>
 </div>
 </template>
@@ -16,7 +16,10 @@ export default {
 
 <style lang="scss" scope>
   .main {
-    height: 150px;
     background-color: black;
+  }
+  h2 {
+    color: white;
+    padding: 1.5em 0;
   }
 </style>
