@@ -12,6 +12,9 @@ export default {
   name: "App",
   components: {
     // HelloWorld,
+    Header,
+    Main,
+    Footer,
   },
 };
 </script>
