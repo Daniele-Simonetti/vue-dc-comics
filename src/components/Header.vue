@@ -46,7 +46,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" scope>
   @import "../assets/scss/partials/_variables.scss";
   .header {
     // background-color: red;

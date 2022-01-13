@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <Main />
+    <EndMain />
     <!-- <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   </div>
@@ -11,6 +12,7 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 import Header from "./components/Header.vue"
 import Main from "./components/Main.vue"
+import EndMain from "./components/EndMain.vue"
 
 export default {
   name: "App",
@@ -18,6 +20,7 @@ export default {
     // HelloWorld,
     Header,
     Main,
+    EndMain,
     // Footer,
   },
 };
