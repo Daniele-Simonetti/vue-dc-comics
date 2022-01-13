@@ -8,19 +8,19 @@
         </li>
         <li>
           <img src="../assets/img/buy-comics-merchandise.png" alt="dc merch">
-          <a href="">Digital comics</a>
+          <a href="">Dc merchandise</a>
         </li>
         <li>
           <img src="../assets/img/buy-comics-subscriptions.png" alt="sbscription">
-          <a href="">Digital comics</a>
+          <a href="">Subscription</a>
         </li>
         <li>
-          <img src="../assets/img/buy-comics-shop-locator.png" alt="shop locator">
-          <a href="">Digital comics</a>
+          <img src="../assets/img/buy-comics-shop-locator.png" alt="shop locator" class="maps">
+          <a href="">Comic shop locator</a>
         </li>
         <li>
           <img src="../assets/img/buy-dc-power-visa.svg" alt="dc power vis" class="powershell">
-          <a href="">Digital comics</a>
+          <a href="">Dc power visa</a>
         </li>
       </ul>
     </div>
@@ -50,13 +50,20 @@ export default {
       list-style: none;
       display: flex;
       align-items: center;
-      justify-content: space-around;
-      // width: calc(100% / 5);
+      justify-content: flex-end;
+      width: calc(100% / 5);
       img {
-        width: 30%;
+        width: 20%;
       }
       img.powershell {
-        width: 30%;
+        width: 28%;
+      }
+      img.maps {
+        width: 15%;
+      }
+      a {
+        font-size: 0.7em;
+        color: white;
       }
     }
   }
