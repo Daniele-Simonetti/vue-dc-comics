@@ -7,7 +7,7 @@
         <a href="">Characters</a>
       </li>
       <li>
-        <a href="">Comics</a>
+        <a href="" class="active">Comics</a>
       </li>
       <li>
         <a href="">Movies</a>
@@ -63,12 +63,19 @@ export default {
         display: flex;
         align-items: center;
         a {
-          display: block;
+          display: flex;
+          align-items: center;
           text-decoration: none;
-          padding: 1em;
+          padding: 0 1em;
           font-weight: bold;
           text-transform: uppercase;
           color: $headerGrayColor;
+          height: 100%;
+          &:hover,
+          &:active,
+          &.active {
+            border-bottom: 5px solid $mainBlueColor;
+          }
         }
       }
     }
