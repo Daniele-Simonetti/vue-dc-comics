@@ -44,7 +44,7 @@ export default {
     .container {
       display: flex;
       justify-content: space-between;
-      padding: 1em 0;
+      padding: 1.5em 0;
       ul {
         list-style: none;
         display: flex;
@@ -58,7 +58,17 @@ export default {
             text-transform: uppercase;
             font-weight: bold;
           }
+          img {
+            width: 80%;
+          }
         }
+      }
+      button {
+        background-color: $endFooterColor;
+        border: 2px solid $mainBlueColor;
+        text-transform: uppercase;
+        color: white;
+        padding: 1em 1.5em;
       }
     }
   }

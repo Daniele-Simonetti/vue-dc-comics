@@ -46,7 +46,7 @@ export default {
   ul.endmain {
     display: flex;
     justify-content: space-around;
-    padding: 3em 0;
+    padding: 2em 0;
   }
   li {
     list-style: none;
