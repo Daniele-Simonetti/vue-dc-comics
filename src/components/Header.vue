@@ -47,6 +47,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import "../assets/scss/partials/_variables.scss";
   .header {
     display: flex;
     justify-content: space-around;
@@ -71,6 +72,7 @@ export default {
         padding: 1em;
         font-size: 80%;
         text-transform: uppercase;
+        color: &fontFamily;
       }
     }
   }
