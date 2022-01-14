@@ -25,17 +25,16 @@ export default {
     overflow: hidden;
     width: 100%;
     height: 160px;
-  }
-  img {
-    width: 100%;
-    
+    img {
+      width: 100%; 
+    }
   }
   span {
     display: block;
     color: white;
     text-transform: uppercase;
     font-size: 1.1em;
-    margin: 0.5em 0 1em 0;
+    margin-top: 0.5em;
   }
 }
 </style>
