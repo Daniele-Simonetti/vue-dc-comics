@@ -3,19 +3,27 @@
     <div class="jumbo"></div>
     <div class="container">
       <div class="cards">
-        <!-- <Card /> -->
-        <div class="card" v-for="(card, index) in cards" :key="index">
+        <Card 
+        v-for="(card, index) in cards" 
+        :key="index"
+        :img="card.thumb"
+        :name="card.series"
+        />
+        <!-- <div class="card" v-for="(card, index) in cards" :key="index">
           <img :src="card.thumb" :alt="card.type">
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// import Card from "./Card.vue" 
+import Card from "./Card.vue" 
 export default {
   name: "Main",
+  components: {
+    Card,
+  },
   data() {
     return {
       cards: 
@@ -99,8 +107,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/partials/_variables.scss";
   .main {
-    background-color: black;
+    background-color: $cardbgColor;
   }
   h2 {
     color: white;
@@ -116,9 +125,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     .card {
-      width: calc(100% / 6);
-      height: calc(100% / 6);
-      overflow: hidden;
+      flex-basis: calc(100% / 6);
       // padding: 1em;
     }
   }
