@@ -1,6 +1,8 @@
 <template>
   <div class="card">
+    <div>
     <img :src="img" :alt="name">
+    </div>
     <span>{{ name }}</span>
   </div>
 </template>
@@ -17,11 +19,16 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  width: calc((100% / 6) - 2em);
-  height: calc((100% / 6) - 2em);
+  width: calc(192px - 2em);
   margin: 1em 1em;
+  div {
+    overflow: hidden;
+    width: 100%;
+    height: 160px;
+  }
   img {
     width: 100%;
+    
   }
   span {
     display: block;
