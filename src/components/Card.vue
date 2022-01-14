@@ -19,16 +19,16 @@ export default {
 .card {
   width: calc((100% / 6) - 2em);
   height: calc((100% / 6) - 2em);
-  margin: 0 1em;
+  margin: 1em 1em;
   img {
-    object-fit: cover;
+    width: 100%;
   }
   span {
     display: block;
     color: white;
     text-transform: uppercase;
     font-size: 1.1em;
-    margin: 0.5em 0 2em 0;
+    margin: 0.5em 0 1em 0;
   }
 }
 </style>
