@@ -124,9 +124,5 @@ export default {
   div.cards {
     display: flex;
     flex-wrap: wrap;
-    .card {
-      flex-basis: calc(100% / 6);
-      // padding: 1em;
-    }
   }
 </style>
