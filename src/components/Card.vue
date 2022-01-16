@@ -27,6 +27,7 @@ export default {
     height: 60%;
     img {
       width: 100%; 
+      cursor: pointer;
     }
   }
   span {

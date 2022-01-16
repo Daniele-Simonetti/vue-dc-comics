@@ -57,9 +57,11 @@ export default {
             color: $wardBlueColor;
             text-transform: uppercase;
             font-weight: bold;
+            cursor: pointer;
           }
           img {
             width: 80%;
+            cursor: pointer;
           }
         }
       }
@@ -69,6 +71,7 @@ export default {
         text-transform: uppercase;
         color: white;
         padding: 1em 1.5em;
+        cursor: pointer;
       }
     }
   }
