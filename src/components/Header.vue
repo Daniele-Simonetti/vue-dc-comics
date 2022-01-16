@@ -3,10 +3,10 @@
   <div class="container">
     <img src="../assets/img/dc-logo.png" alt="logo header">
     <ul>
-      <li>
-        <a href="">Characters</a>
+      <li v-for="(link, index) in links" :key="index" @click="activeLink(index)">
+        <a :href="link.url" :class="(link.current == true) ? 'active' : '' ">{{link.title}}</a>
       </li>
-      <li>
+      <!-- <li>
         <a href="" class="active">Comics</a>
       </li>
       <li>
@@ -32,7 +32,7 @@
       </li>
       <li>
         <a href="">Shop</a>
-      </li>
+      </li> -->
     </ul>
   </div>
 
@@ -42,7 +42,75 @@
 <script>
 export default {
   name: "Header",
-  data() {},
+  data() {
+    return {
+      links: [
+        {
+          title: "Characters",
+          url: "#",
+          current: false,
+        },
+        {
+          title: "Comics",
+          url: "#",
+          current: true,
+        },
+        {
+          title: "Movies",
+          url: "#",
+          current: false,
+        },
+        {
+          title: "Tv",
+          url: "#",
+          current: false,
+        },
+        {
+          title: "Games",
+          url: "#",
+          current: false,
+        },
+        {
+          title: "Collectibles",
+          url: "#",
+          current: false,
+        },
+        {
+          title: "Videos",
+          url: "#",
+          current: false,
+        },
+        {
+          title: "Fans",
+          url: "#",
+          current: false,
+        },
+        {
+          title: "News",
+          url: "#",
+          current: false,
+        },
+        {
+          title: "Shop",
+          url: "#",
+          current: false,
+        },
+      ]
+    }
+  },
+  methods: {
+    activeLink(indexLink) {
+      this.links.forEach(
+        (link, index) => {
+          if (index === indexLink) {
+            link.current = true;
+          } else {
+            link.current = false;
+          }
+        }
+      )
+    }
+  }
 };
 </script>
 
