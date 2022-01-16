@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="endmain">
     <li>
       <img :src="img" :alt="text">
-      <a href="#">{{text}}</a>
+      <a href="">{{text}}</a>
     </li>
   </div>
 </template>
@@ -18,12 +18,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+div.endmain {
+  width: calc(100% / 5);
   li {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(100% / 5);
+    // width: calc(100% / 5);
     a {
       display: block;
       text-decoration: none;
@@ -41,4 +43,6 @@ export default {
       width: 15%;
     }
   }
+
+}
 </style>

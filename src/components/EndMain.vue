@@ -7,7 +7,10 @@
         :img="icon.src"
         :text="icon.text"
         />
-        <!-- <li>
+
+      </ul>
+      <!-- <ul class="endmain">
+        <li>
           <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics">
           <a href="">Digital comics</a>
         </li>
@@ -26,8 +29,8 @@
         <li>
           <img src="../assets/img/buy-dc-power-visa.svg" alt="dc power vis" class="powershell">
           <a href="">Dc power visa</a>
-        </li> -->
-      </ul>
+        </li>
+      </ul> -->
     </div>
   </div>
 </template>
@@ -48,19 +51,19 @@ export default {
         },
         {
           "src": require("../assets/img/buy-comics-merchandise.png"),
-          "text": "Digital comics"
+          "text": "Dc merchandise"
         },
         {
           "src": require("../assets/img/buy-comics-subscriptions.png"),
-          "text": "Digital comics"
+          "text": "Subscription"
         },
         {
           "src": require("../assets/img/buy-comics-shop-locator.png"),
-          "text": "Digital comics"
+          "text": "Comic shop locator"
         },
         {
           "src": require("../assets/img/buy-dc-power-visa.svg"),
-          "text": "Digital comics"
+          "text": "Dc power visa"
         },
       ]
     }
