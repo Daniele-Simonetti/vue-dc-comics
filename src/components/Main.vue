@@ -1,6 +1,10 @@
 <template>
   <div class="main">
-    <div class="jumbo"></div>
+    <div class="jumbo">
+      <div class="currentser">
+        <span>Current series</span>
+      </div>
+    </div>
     <div class="container">
       <div class="cards">
         <Card 
@@ -12,6 +16,9 @@
         <!-- <div class="card" v-for="(card, index) in cards" :key="index">
           <img :src="card.thumb" :alt="card.type">
         </div> -->
+      </div>
+      <div class="load-more">
+        <button>Load More</button>
       </div>
     </div>
   </div>
@@ -117,12 +124,39 @@ export default {
   }
   .jumbo {
     background-image: url(../assets/img/jumbotron.jpg);
-    height: 313px;
+    height: 265px;
     background-repeat: no-repeat;
     background-size: cover;
+    div.currentser {
+      position: relative;
+      span {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: white;
+        background-color: $mainBlueColor;
+        padding: 0.3em 1.2em;
+        position: absolute;
+        top: 245px;
+        left: 208px;
+      }
+    }
   }
   div.cards {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 3em;
+  }
+  div.load-more {
+    text-align: center;
+    button {
+      background-color: $wardBlueColor;
+      border: 0;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 0.8em 3.5em;
+      margin-bottom: 1.5em;
+    }
   }
 </style>

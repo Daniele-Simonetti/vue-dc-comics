@@ -20,11 +20,11 @@ export default {
 <style lang="scss" scoped>
 .card {
   width: calc((100% / 6) - 2em);
-  margin: 1em 1em;
+  margin: 0 1em;
   div {
     overflow: hidden;
     width: 100%;
-    height: 170px;
+    height: 60%;
     img {
       width: 100%; 
     }
@@ -33,7 +33,7 @@ export default {
     display: block;
     color: white;
     text-transform: uppercase;
-    font-size: 1.1em;
+    font-size: 1em;
     margin-top: 0.5em;
   }
 }
